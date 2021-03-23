@@ -14,7 +14,7 @@ export default class Paddle {
     }
     update(deltaTime) {
       if (!deltaTime) return;
-      this.position.x += 5 / deltaTime;
+      this.position.x += 15 / deltaTime;
     }
   }
   
