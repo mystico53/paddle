@@ -7,11 +7,17 @@
       #gameScreen {
         border: 1px solid black;
       }
+
+      img {
+        display: none;
+      }
     </style>
   </head>
 
   <body>
-    <canvas id="gameScreen" width="400" height="400"></canvas>
+    <img id="img_Ball" src="assets\images\ballpaddle.png">
+    <img id="img_Brick" src="assets\images\brick.png">
+    <canvas id="gameScreen" width="600" height="400"></canvas>
 
     <script type="module" src="src/index.js"></script>
     <script type="module" src="src/paddle.js"></script>

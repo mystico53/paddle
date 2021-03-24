@@ -13,6 +13,18 @@ export default class InputHandler {
                     break;
             }
         });
+        document.addEventListener("keyup", event => {
+            switch (event.keyCode) {
+                case 37:
+                    if(paddle.speed < 0)
+                        paddle.moveNo();
+                    break;
+                case 39:
+                    if(paddle.speed > 0)
+                        paddle.moveNo();
+                    break;
+            }
+        });
 
     }
 
